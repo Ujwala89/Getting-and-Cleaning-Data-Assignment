@@ -22,7 +22,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 6.  From the data set in step 4, creates a second, independent tidy data set with the average
     of each variable for each activity and each subject.
 
-#### The script is described in 6 sections:
+#### The script is described in 7 sections:
 
 	`	1. Initialization
 		2. Part #1 thru Part #5
