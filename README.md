@@ -50,7 +50,7 @@ The script will do the following:
 	2. The merged file is in an object 'alldata'. It is a dataframe with 10299 observations of 563 variables.
 	
 	
-### Part 2: Extracts only the measurements on the mean and standard deviation for each measurement. ###
+### Part 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
 
 	1. Extract the names containing mean or std() in the features dataset.
 	2. Append "subjectid" and "activityid" to teh extracted variables.The resulting vector represents 
@@ -58,19 +58,18 @@ The script will do the following:
 	3. Using is vector, and the subset operation, extract the columns needed from alldata. 
 	   This data is in the object 'extract_temp'. This contains 10299 observations of 81 variables.
 
-### Part 3: Uses descriptive activity names to name the activities in the data set. ### 
+### Part 3: Uses descriptive activity names to name the activities in the data set.
 
 	1. There are 6 activities. 'activity' object created in part 1 contains description for each activity.
 	2. Usinng merge command, merged 'activity' and 'extract_temp' to get description for each activity in the 
 	resulting object.
 	
-### Part 4: Appropriately labels the data set with descriptive variable names. ### 
+### Part 4: Appropriately labels the data set with descriptive variable names. 
 
 	1. Replace the column names V1 & V2 with activityid and activityname 
     2. The extract object represents all the data required for further analysis.
 		
-### Part 5: From the data set in step 4, creates a second, independent tidy data set with the average of 
-    each variable for each activity and each subject.
+### Part 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 	1. Summarize the data by getting average of all variables by activity and subject.
 	2. Summary object is 'summary_data'. It contains 180 observations & 82 variables.
