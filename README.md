@@ -74,7 +74,7 @@ The script will do the following:
 	1. Summarize the data by getting average of all variables by activity and subject.
 	2. Summary object is 'summary_data'. It contains 180 observations & 82 variables.
 
-### Finalize: Write this data 
+### Finalize: Create a text file using summary_data 
 
 	1. Using write.table command, creates a 'summary_data.txt' file in the 'data' folder under home directory.
 
