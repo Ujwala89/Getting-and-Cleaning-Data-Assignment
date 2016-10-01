@@ -1,5 +1,5 @@
-# Getting and cleaning accelerometers data from the Samsung Galaxy S smartphone
-Getting and Cleaning Data Assignment 
+# Getting and cleaning accelerometers data from the Samsung Galaxy S smartphone 
+#### Getting and Cleaning Data Assignment 
 ### Introduction
 
 The purpose of this project is to demonstrate an ability to collect, work with, and clean a data set. 
@@ -21,8 +21,12 @@ This project creates a R script called run_analysis.R that does the following:
 6.  From the data set in step 4, creates a second, independent tidy data set with the average
     of each variable for each activity and each subject.
 
-##  The script is described in 6 sections (initialization and Parth 1 thru Part 5):
+###  The script is described in 6 sections:
 
+	`	1. Initialization
+		2. Part 1 thru Part 5
+		3. Finalize
+		
 ### Initialization: Get the data
 
 The script will do the following:
@@ -48,8 +52,10 @@ The script will do the following:
 ### Part 2: Extracts only the measurements on the mean and standard deviation for each measurement. ###
 
 	1. Extract the names containing mean or std() in the features dataset.
-	2. Append "subjectid" and "activityid" to teh extracted variables.The resulting vector represens the columns needed from the alldata object
-	3. Using is vector, and the subset operation, extract the columns needed from alldata. This data is in the object 'extract_temp'. This contains 10299 observations of 81 variables.
+	2. Append "subjectid" and "activityid" to teh extracted variables.The resulting vector represents 
+	   the columns needed from the alldata object
+	3. Using is vector, and the subset operation, extract the columns needed from alldata. 
+	   This data is in the object 'extract_temp'. This contains 10299 observations of 81 variables.
 
 ### Part 3: Uses descriptive activity names to name the activities in the data set. ### 
 
@@ -62,7 +68,8 @@ The script will do the following:
 	1. Replace the column names V1 & V2 with activityid and activityname 
     2. The extract object represents all the data required for further analysis.
 		
-### Part 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+### Part 5: From the data set in step 4, creates a second, independent tidy data set with the average of 
+    each variable for each activity and each subject.
 
 	1. Summarize the data by getting average of all variables by activity and subject.
 	2. Summary object is 'summary_data'. It contains 180 observations & 82 variables.
