@@ -1,4 +1,3 @@
-#### Getting and Cleaning Data Assignment 
 # Getting and cleaning accelerometers data from the Samsung Galaxy S smartphone 
 
 ### Introduction
@@ -39,7 +38,7 @@ The script will do the following:
 	4. Next download the file and store it as wk4data.zip in the data directory in the home directory.
 	5. Next unzip the wk4data.zip file to create a folder "UCI HAR Dataset" under the data directory.
 
-###Part #1: Merges the training and the test sets to create one data set. 
+### Part #1: Merges the training and the test sets to create one data set. 
 
     1. Read various data files required for the analysis and merge them using the folloing format:
 	
