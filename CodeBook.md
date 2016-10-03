@@ -3,7 +3,7 @@
 ##About Feature selection:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
-These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter 
+These time domain signals (prefix 't' denotes time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter 
 and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then 
 separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz:
 
@@ -23,14 +23,14 @@ Also the magnitude of these three-dimensional signals were calculated using the 
 			tBodyGyroMag
 			tBodyGyroJerkMag 
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequency domain signals (prefix 't' to denote time):
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequency domain signals (prefix 'f' denotes frequency):
 
 			fBodyAcc-XYZ
 			fBodyAccJerk-XYZ
 			fBodyGyro-XYZ
 			fBodyAccJerkMag
 			fBodyGyroMag
-			fBodyGyroJerkMag. 
+			fBodyGyroJerkMag 
 
 These signals were used to estimate variables of the feature vector for each pattern. '-XYZ' is used to denote 3-axial signals in the X, Y and Z 
 directions:
@@ -53,13 +53,13 @@ directions:
 			fBodyGyroMag
 			fBodyGyroJerkMag
 
-##The extracted data for this assignment includes mean and standard deviation variables estimated from these signals. The data dictionary below explains the data included in the final "summary_data" submitted for final evaluation.
+### The data extracted for this assignment includes mean and standard deviation variables estimated from these signals. The data dictionary below explains the data included in the final "summary_data" submitted for final evaluation.
 
-##												DATA DICTIONARY - Samsung Galaxy S smartphone accelerometers data
+##DATA DICTIONARY - Samsung Galaxy S smartphone accelerometers data
 
 1. activityname
-		Name of the activity uniquely represented ny activityid
-			1. WALKING
+		Name of the activity subject was performing during experiment, uniquely represented by activityid
+			1. WALKING 
 			2. WALKING_UPSTAIRS
 			3. WALKING_DOWNSTAIRS
 			4. SITTING
@@ -68,7 +68,7 @@ directions:
 			Factor w/ 6 levels "LAYING","SITTING",..: 4 4 4 4 4 4 4 4 4 4 ...
 			
 2. subjectid	
-		identifies each of the 30 participants in the Human activity tracking
+		identifies each of the 30 participants in the Human activity tracking using Samsun Galaxy S smartphone
 		int  1 2 3 4 5 6 7 8 9 10 ...30
 		
 3. activityid
@@ -76,7 +76,7 @@ directions:
 		number 1 thru 6 
 		num  1 1 1 1 1 1 1 1 1 1 ...
 		
-##Variables 4 thru 82 represent the mean and standard deviation measurements extracted and summarized using mean from the original source data:
+##Variables 4 thru 82 represent the mean and standard deviation measurements extracted and summarized using mean from the original data source:
 
 		4.timeBodyAcc-Mean-X          : num  0.277 0.276 0.276 0.279 0.278 ...
 		5.timeBodyAcc-Mean-Y          : num  -0.0174 -0.0186 -0.0172 -0.0148 -0.0173 ...
