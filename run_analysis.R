@@ -75,9 +75,16 @@ extract <- merge(activity,extract_temp,by.x="V1",by.y="activityid",all=FALSE)
 
 print("### Completed Part 3 of the assignment to add descriptive activity names to the activities in the data set. ###")
 
-### Part 4: Appropriately labels the data set with descriptive variable names. ### 
+### Part 4: Appropriately labels the data set with descriptive variable names. ###
+
 colnames(extract)[1] <- "activityid"                         
 colnames(extract)[2] <- "activityname"
+colnames(extract) <- gsub("^t","time",names(extract))
+colnames(extract) <- gsub("^f","freq",names(extract))
+colnames(extract) <- gsub("mean\\(\\)","Mean",names(extract))
+colnames(extract) <- gsub("std\\(\\)","Std",names(extract))
+colnames(extract) <- gsub("meanFreq\\(\\)","meanFreq",names(extract))
+colnames(extract) <- gsub("BodyBody","Body",names(extract))
 
 print("### Completed Part 4 of the assignment to appropriately label the data set with descriptive variable names. ###")
 
@@ -93,3 +100,4 @@ print("### Completed Part 5 of the assignment to create a second tidy dataset wi
 write.table(summary_data,file="./data/summary_data.txt",row.name=FALSE)
 
 print("Completed writing data in the data directory")
+print("End of run_analysis script")
