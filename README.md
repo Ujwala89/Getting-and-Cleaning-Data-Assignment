@@ -51,7 +51,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ### Part 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
 
 	1. Extract the names containing mean or std() in the features dataset.
-	2. Append "subjectid" and "activityid" to teh extracted variables.The resulting vector represents 
+	2. Append "subjectid" and "activityid" to the extracted variables. The resulting vector represents 
 	   the columns needed from the alldata object
 	3. Using is vector, and the subset operation, extract the columns needed from alldata. 
 	   This data is in the object 'extract_temp'. This contains 10299 observations of 81 variables.
@@ -76,10 +76,19 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 	1. Using write.table command, creates a 'summary_data.txt' file in the 'data' folder under home directory.
 
+### Instructions to readback the summary data submitted for this assignment:
+
+	address <- "https://s3.amazonaws.com/coursera-uploads/peer-review/HkJsxW0yEeWEewoyD2Bc5Q/a19a620d2d8be30942c1d495ef53a2ce/summary_data.txt"
+	address <- sub("^https", "http", address)
+	readbackdata <- read.table(url(address), header = TRUE) 
+	View(readbackdata)
+
 ###References/Acknowledgement
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 [2] http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-   
+The Post from David Hood for the final assignment and the dicusssion forums helped me complete this assignment.
+	https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
+	
