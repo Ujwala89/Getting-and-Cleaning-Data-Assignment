@@ -29,7 +29,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 		
 ### Initialization: Get the data
 
-The script will do the following:
 	1. Load necessary packages for the functions used in the script.
 	2. Check for existence of 'data' directory in the home directory and create it if it doesnt exist,
 	3. Check for existence of the 'wk4data.zip' fileand delete it if it exists 
