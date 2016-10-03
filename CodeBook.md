@@ -58,24 +58,21 @@ directions:
 ##DATA DICTIONARY - Samsung Galaxy S smartphone accelerometers data
 
 1. activityname
-		Name of the activity subject was performing during experiment, uniquely represented by activityid
+		Name of the activity subject was performing during the experiment, it is a factor variable with 6 levels
 			1. WALKING 
 			2. WALKING_UPSTAIRS
 			3. WALKING_DOWNSTAIRS
 			4. SITTING
 			5. STANDING
 			6. LAYING
-			Factor w/ 6 levels "LAYING","SITTING",..: 4 4 4 4 4 4 4 4 4 4 ...
-			
+						
 2. subjectid	
-		identifies each of the 30 participants in the Human activity tracking using Samsun Galaxy S smartphone
-		int  1 2 3 4 5 6 7 8 9 10 ...30
-		
+		identifies each of the 30 participants in the Human activity tracking using Samsun Galaxy S smartphone. 
+		It is an integer variable fro 1 thru 30.
+				
 3. activityid
-		identifies each of the 6 activities
-		number 1 thru 6 
-		num  1 1 1 1 1 1 1 1 1 1 ...
-		
+		identifies each of the 6 activities. It is number variable with values from 1 thru 6
+				
 ##Variables 4 thru 82 represent the mean and standard deviation measurements extracted and summarized using mean from the original data source:
 
 		4.timeBodyAcc-Mean-X          : num  0.277 0.276 0.276 0.279 0.278 ...
@@ -158,5 +155,5 @@ directions:
        81.freqBodyGyroMag-Std         : num  -0.321 -0.652 -0.633 -0.594 -0.59 ...
        82.freqBodyGyroJerkMag-Std     : num  -0.382 -0.558 -0.549 -0.758 -0.456 ...
 		
-
+##This completes description of the code table
    
