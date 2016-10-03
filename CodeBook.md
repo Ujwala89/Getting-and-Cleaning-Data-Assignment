@@ -1,14 +1,19 @@
-# Getting and cleaning accelerometers data from the Samsung Galaxy S smartphone 
+# Code Book: Getting and cleaning accelerometers data from the Samsung Galaxy S smartphone 
+
+##About Feature selection:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter 
 and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then 
-separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner
-frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+			tBodyAcc-XYZ 
+			tGravityAcc-XYZ
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
 			tBodyAccJerk-XYZ 
 			tBodyGyroJerk-XYZ
 
-			Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm 
 			tBodyAccMag
 			tGravityAccMag
 			tBodyAccJerkMag
@@ -23,8 +28,8 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 			fBodyGyroMag
 			fBodyGyroJerkMag. 
 
-These signals were used to estimate variables of the feature vector for each pattern.
- '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+These signals were used to estimate variables of the feature vector for each pattern. '-XYZ' is used to denote 3-axial signals in the X, Y and Z 
+directions.
 
 			tBodyAcc-XYZ
 			tGravityAcc-XYZ
@@ -46,7 +51,6 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The extracted data for this assignment includes mean and standard deviation variables estimated from these signals.
 
-
 #												DATA DICTIONARY - Samsung Galaxy S smartphone accelerometers data
 
 1. activityname
@@ -65,7 +69,13 @@ The extracted data for this assignment includes mean and standard deviation vari
 3. activityid
 		identifies each of the 6 activities
 		integer 1 thru 6 
-			
+		
+##Variables 4 thru 82 represent the mean and standard deviation measurements extracted and summarized using mean from the original source data:
+		4. tBodyAccmean()-X
+		5. tBodyAccmean()-Y
+		6. tBodyAccmean()-Z
+		
+		
 4. tBodyAccmean()-X
 5. tBodyAccmean()-Y
 6. tBodyAccmean()-Z
